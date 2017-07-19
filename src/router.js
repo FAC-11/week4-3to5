@@ -6,7 +6,7 @@ const router = function (request, response) {
         // This moved to the handlers
     handler.index(request, response);
   } else if (url.indexOf('/search') !== -1) {
-    handler.query(request, response);
+    handler.query(request, response, 'data/pokemon.txt');
   } else {
     handler.assets(request, response);
   }
@@ -18,4 +18,3 @@ module.exports = router;
 // Else if querystring
 //
 // Else if assets
-
