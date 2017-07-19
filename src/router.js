@@ -1,11 +1,21 @@
 const handler = require('./handler');
 
-const router = function(request, response) {
+const router = function (request, response) {
+  const url = request.url;
+  if (url === '/') {
+        // This moved to the handlers
+    handler.index(request, response);
+  } else if (url.indexOf('/search') !== -1) {
+    handler.query(request, response);
+  } else {
+    handler.assets(request, response);
+  }
+};
+
+module.exports = router;
 // If index
 //
 // Else if querystring
 //
 // Else if assets
-};
 
-module.exports = router;
