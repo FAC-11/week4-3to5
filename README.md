@@ -13,17 +13,17 @@ We're creating a Pokemon auto complete search bar to help Ash.
 
 ## How
 The main tasks we had to do were:
-[ ] Architecting the software design
-[ ] Create back-end to filter through the searches
-[ ] Have an input field in the front-end
-[ ] Auto-complete the input field
-[ ] Testing front-end __and__ back-end
+- [ ] Architecting the software design
+- [ ] Create back-end to filter through the searches
+- [ ] Have an input field in the front-end
+- [ ] Auto-complete the input field
+- [ ] Testing front-end __and__ back-end
 
 We did this by blah blah blah .....
 
 ## Stretch Goals
-[ ] To get all stats for a Pokemon from the Poké API.
-[ ] Add Poké theme tune and color scheme because we want to be the very best.
+- [ ] To get all stats for a Pokemon from the Poké API.
+- [ ] Add Poké theme tune and color scheme because we want to be the very best.
 
 ## How did we split up work?
 
@@ -32,3 +32,5 @@ We did this by blah blah blah .....
 ## What did you learn?
 
 ## Resources
+[Function call
+method](http://clubmate.fi/the-intuitive-and-powerful-foreach-loop-in-javascript/#Looping_HTMLCollection_or_a_nodeList_with_forEach)
