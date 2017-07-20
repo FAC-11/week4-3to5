@@ -41,7 +41,7 @@ We did this by blah blah blah .....
   e.g. `/\w/` becomes `'\\w'` or in our case we used `'\\b' + searchTerm + '\\w*'`
 
 ## Resources
-[Call
+* [Call
 method](http://clubmate.fi/the-intuitive-and-powerful-foreach-loop-in-javascript/#Looping_HTMLCollection_or_a_nodeList_with_forEach)
-[Double escaping string
+* [Double escaping string
 regexes](https://stackoverflow.com/questions/2712878/javascript-regex-pattern-concatenate-with-variable/2712896#2712896)
