@@ -1,12 +1,32 @@
 *{
-  box-sizing: border-box;
+  font-family: 'pokemon-font';
+}
+body{
+  background-image: url(https://storage.googleapis.com/files.cs-first.com/images/music/7/clouds.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: repeat-x;
 }
 
-.pokeContainer{
+form{
   text-align: center;
-  margin: 40px auto;
-  width: 500px;
-  height: 90vh;
-  border-radius: 5px;
-  background-color: #c00d0d;
+  margin-top: 40px;
+}
+
+.img{
+  display: flex;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.ash{
+margin-left: -425px;
+        transform: scale(1.25, 1.25);
+}
+
+.ashAndDex{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }

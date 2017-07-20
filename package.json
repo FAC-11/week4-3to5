@@ -18,7 +18,9 @@
     "url": "https://github.com/FAC-11/week4-3to5/issues"
   },
   "homepage": "https://github.com/FAC-11/week4-3to5#readme",
-  "dependencies": {},
+  "dependencies": {
+    "pokemon-font": "^1.7.0"
+  },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
