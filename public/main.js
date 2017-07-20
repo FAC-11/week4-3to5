@@ -1,23 +1,44 @@
-(function() {
-  var results = ['pikachu', 'coffin', 'jigglypuff', 'squirtle', 'ekans'];
-})();
-
-
-// XHR request
-var pokeInput = document.getElementById('js-pokeInput');
-pokeInput.addEventListener('input', function(event) {
-  var pokeLetters = event.target.value;
-  var url = '/search?q=' + pokeLetters;
+const pokeRequest = function(url, callback){
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var results = JSON.parse(xhr.responseText);
-      var optionDrops = document.getElementsByClassName('option');
-      Array.prototype.forEach.call(optionDrops, function(optionDrop, index) {
-        optionDrop.textContent = results[index];
-      });
+      callback(null,results);
+      };
+    }
+
+  xhr.open('GET', url, true);
+  xhr.send();
+}
+
+const domInput = document.getElementById('js-pokeInput');
+const searchRequest = (function() {
+  let oldValue = '';
+   return function(newValue) {
+     if(newValue !== oldValue) {
+       pokeRequest('/search?q=' + newValue, domCallback);
+     } else {
+       domCallback(null, '');
+     }
+     oldValue = newValue;
+   }
+
+})();
+
+
+const searchTerm = (function() {
+  let checkSymbols = function(string) {
+    return string.match(/[^a-z-2]/gi);
+  }
+  return function(inputText, callback) {
+    if(inputText && !checkSymbols(inputText)) {
+      callback(inputText);
+    } else {
+      callback();
     }
   }
-xhr.open('GET', url, true);
-xhr.send();
-});
+})();
+
+domInput.addEventListener('keyup', function(event) {
+  searchTerm(event.target.value, searchRequest);
+})
