@@ -38,8 +38,7 @@ We did this by blah blah blah .....
   });
   ```
 * When putting a regex in a string literal you need one more round of escaping:
-  e.g. `/\w/` becomes `'\\w'` or in our case we used `'\\b' + searchTerm
-  + '\\w*'`
+  e.g. `/\w/` becomes `'\\w'` or in our case we used `'\\b' + searchTerm + '\\w*'`
 
 ## Resources
 [Call
