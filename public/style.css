@@ -55,7 +55,7 @@ margin-left: -425px;
   z-index: -2;
   float: right;
   position: relative !important;
-  animation: bob 10s infinite linear, fly 10s infinite linear;
+  animation: bob 10s infinite linear, fly 10s infinite linear, bigger 10s infinite linear;
 }
 
 
@@ -88,8 +88,8 @@ margin-left: -425px;
 }
 
 @keyframes bigger {
-    0%   {left: 0px;}
-    25%  {left: 200px;}
-    75%  {left: 50px}
-    100% {left: 100px;}
+    0%   {transform: scale(0.5);}
+    25%  {transform: scale(1);}
+    75%  {transform: scale(1.5);}
+    100% {transform: scale(2);}
 }
