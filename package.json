@@ -4,6 +4,7 @@
   "description": "Autocomplete",
   "main": "index.js",
   "scripts": {
+    "start":"node ./src/server.js",
     "test": "node ./tests/*.js | tap-spec",
     "devStart": "nodemon src/server.js",
     "coverage": "./node_modules/.bin/istanbul cover tape ./tests/*.js"
