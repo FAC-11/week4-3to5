@@ -36,13 +36,14 @@ button{
   display: flex;
   box-sizing: border-box;
   background-repeat: no-repeat;
-  margin: 0 auto;
 }
 
 .ash{
-margin-left: -425px;
-        transform: scale(1.25, 1.25);
-        z-index: -1;
+float: left;
+transform: scale(1.25, 1.25);
+z-index: -1;
+margin-top: 120px;
+margin-left: 25px;
 }
 
 .ashAndDex{
@@ -57,7 +58,11 @@ margin-left: -425px;
   position: relative !important;
   animation: bob 10s infinite linear, fly 10s infinite linear;
 }
-
+.pokeImage{
+  height:400px;
+  margin-left: 206px;
+margin-top: 200px;
+}
 
 @keyframes bob {
   0%   {top: 0px;}

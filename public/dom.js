@@ -18,6 +18,7 @@ var insertPokeInfo = function(err, response) {
   var imageDrop = document.getElementById('js-pokeImage');
   var imageElt = document.createElement('img');
   imageElt.src = response.sprites.front_default;
+  imageElt.classList.add("pokeImage");
   imageElt.alt = response.name;
   if (imageDrop.firstChild) {
     imageDrop.replaceChild(imageElt, imageDrop.firstChild);
@@ -34,4 +35,3 @@ form.addEventListener('submit', function(event) {
   var url = 'http://pokeapi.co/api/v2/pokemon/' + domInput.value.toLowerCase();
   pokeRequest(url, insertPokeInfo);
 });
-
