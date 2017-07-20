@@ -16,7 +16,7 @@ const searchRequest = (function() {
 
 const searchTerm = (function() {
   let checkSymbols = function(string) {
-    return string.match(/[^a-z]/gi);
+    return string.match(/[^a-z-2]/gi);
   }
   return function(inputText, callback) {
     if(inputText && !checkSymbols(inputText)) {
