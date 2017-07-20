@@ -42,10 +42,54 @@ button{
 .ash{
 margin-left: -425px;
         transform: scale(1.25, 1.25);
+        z-index: -1;
 }
 
 .ashAndDex{
   display: flex;
   justify-content: space-around;
   margin-top: 75px;
+}
+
+.ho-oh{
+  z-index: -2;
+  float: right;
+  position: relative !important;
+  animation: bob 10s infinite linear, fly 10s infinite linear;
+}
+
+
+@keyframes bob {
+  0%   {top: 0px;}
+  10%   {top: 50px;}
+  20%   {top: 100px;}
+  30%   {top: 150px;}
+  40%   {top: 100px;}
+  50%   {top: 50px;}
+  60%   {top: 0px;}
+  70%  {top: 50px;}
+  80%  {top: 100px}
+  90% {top: 150px;}
+  100%   {top: 100px;}
+}
+
+@keyframes fly {
+    0%   {right: -200px;}
+    10%   {right: 0px;}
+    20%   {right: 200px;}
+    30%   {right: 400px;}
+    40%   {right: 600px;}
+    50%   {right: 800px;}
+    60%   {right: 1000px;}
+    70%  {right: 1200px;}
+    80%  {right: 1400px}
+    90% {right: 1600px;}
+    100%   {right: 1800px;}
+}
+
+@keyframes bigger {
+    0%   {left: 0px;}
+    25%  {left: 200px;}
+    75%  {left: 50px}
+    100% {left: 100px;}
 }
