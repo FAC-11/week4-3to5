@@ -13,8 +13,3 @@ const router = function (request, response) {
 };
 
 module.exports = router;
-// If index
-//
-// Else if querystring
-//
-// Else if assets
