@@ -1,0 +1,12 @@
+*{
+  box-sizing: border-box;
+}
+
+.pokeContainer{
+  text-align: center;
+  margin: 40px auto;
+  width: 500px;
+  height: 90vh;
+  border-radius: 5px;
+  background-color: #c00d0d;
+}
