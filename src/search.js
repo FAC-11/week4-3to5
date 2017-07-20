@@ -10,7 +10,7 @@ const searchFunction = function(file, query, number, callback) {
       const regEx = new RegExp(`\b(${query})\w*`, 'gi');
       // match takes reg expression and pulls out all the matches from the stringified text file
       const pokeMatches = fileString.match(regEx);
-      const pokeTenMatches = pokeMatches.slice(0, number)
+      const pokeTenMatches = pokeMatches ? pokeMatches.slice(0, number) : '';
       callback(null, JSON.stringify({
         pokeTenMatches
       }))
