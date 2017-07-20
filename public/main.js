@@ -1,5 +1,17 @@
+const pokeRequest = function(url, callback){
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      var results = JSON.parse(xhr.responseText);
+      callback(null,results);
+      };
+    }
 
-const domInput = document.getElementsByID('search_input');
+  xhr.open('GET', url, true);
+  xhr.send();
+}
+
+const domInput = document.getElementById('js-pokeInput');
 const searchRequest = (function() {
   let oldValue = '';
    return function(newValue) {
@@ -30,12 +42,3 @@ const searchTerm = (function() {
 domInput.addEventListener('keyup', function(event) {
   searchTerm(event.target.value, searchRequest);
 })
-
-// (function() {
-//   var results = ['pikachu', 'coffin', 'jigglypuff', 'squirtle', 'ekans'];
-//   var optionDrops = document.getElementsByClassName('option');
-//
-//   Array.prototype.forEach.call(optionDrops, function(optionDrop, index) {
-//     optionDrop.textContent = results[index];
-//   });
-// })();
