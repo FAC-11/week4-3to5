@@ -23,7 +23,8 @@ const index = function(request, response) {
       return;
     }
     response.end(file);
-  }, );
+  } 
+);
 };
 
 const assets = function(request, response, filePath) {
