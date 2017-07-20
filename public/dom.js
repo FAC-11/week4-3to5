@@ -13,3 +13,25 @@ const domCallback = function(error, response) {
 
   }
 }
+
+var insertPokeInfo = function(err, response) {
+  var imageDrop = document.getElementById('js-pokeImage');
+  var imageElt = document.createElement('img');
+  imageElt.src = response.sprites.front_default;
+  imageElt.alt = response.name;
+  if (imageDrop.firstChild) {
+    imageDrop.replaceChild(imageElt, imageDrop.firstChild);
+  }
+  else {
+    imageDrop.appendChild(imageElt);
+  }
+  console.log(response);
+}
+
+var form = document.getElementById('js-pokeForm');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  var url = 'http://pokeapi.co/api/v2/pokemon/' + domInput.value.toLowerCase();
+  pokeRequest(url, insertPokeInfo);
+});
+
