@@ -4,16 +4,18 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>AutoPok&eacute;</title>
   <script src="main.js" type="text/javascript" async></script>
   <script src="dom.js" type="text/javascript" async></script>
 </head>
 
 <body>
+
   <!-- <audio controls autoplay loop><source src='../media/01.-pokemon-theme.mp3' type='audio/mpeg'> Your Browsers' crap</audio> -->
   <form>
     <label>Search for your Pokemon!
-      <input list="search_bar" id='js-pokeInput'>
+      <input list="search_bar" id='js-pokeInput' class-='pokeInput'>
     </input>
   </label>
     <datalist id="search_bar">
@@ -28,6 +30,11 @@
     </button>
   </form>
 
+<div class ="ashAndDex">
+<img class="pokeDex" src="http://www.geocities.ws/pokemontours2/indexes/objects/pokedex1.gif" alt="Pokedex">
+</img>
+<img class = "ash" src="http://satoshipedia.altervista.org/wp-content/uploads/2015/12/ash_ketchum-467.png">
+</div>
 </body>
 
 </html>
