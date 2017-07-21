@@ -7,7 +7,7 @@ const query = function(request, response, filePath) {
   response.writeHead(200, {'Content-Type': 'application/javascript'});
   const urlEndpoint = urlLink.parse(request.url, true);
   const searchTerm = urlEndpoint.query;
-  search(filePath, searchTerm.q, 10, (error, res) => {
+  search.searchFunction(filePath, searchTerm.q, 10, (error, res) => {
     response.end(res);
   });
 };
@@ -23,7 +23,7 @@ const index = function(request, response) {
       return;
     }
     response.end(file);
-  } 
+  }
 );
 };
 

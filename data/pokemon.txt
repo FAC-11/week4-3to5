@@ -195,7 +195,7 @@ Ferroseed
 Ferrothorn
 Finneon
 Flaaffy
-Flabébé
+Flabebe
 Flareon
 Fletchinder
 Fletchling
@@ -399,7 +399,7 @@ Mienshao
 Mightyena
 Milotic
 Miltank
-Mime Jr.
+Mime-Jr
 Minccino
 Minun
 Misdreavus
@@ -407,7 +407,7 @@ Mismagius
 Moltres
 Monferno
 Mothim
-Mr. Mime
+Mr-Mime
 Mudkip
 Muk
 Munchlax

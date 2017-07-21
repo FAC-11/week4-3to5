@@ -2,14 +2,15 @@
 
 ## Why
 ### User Persona
-Ash __loves__ Pokemon. And we mean LOVES. He can't for the life of him remember let alone spell half of their names. Poor Ash.
+Ash __loves__ Pokemon. And we mean LOVES. After 20 years he has finally caught 'em all..until the next generation. He can't for the life of him remember let alone spell half of their names. Even worse he cant tell his balls apart! Poor Ash.
 Currently he has to look in his Pokédex which is totally unreliable. He feels like he's living in the '90s, still using his Pokedex. He wishes he could just search using his smartphone for any Pokemon name and find the crucial stats he needs to become a true Pokemon master.
 
 ### User Journey
 Ash would simply go to (insert URL) and type the starting letter of the Pokemon he wants information on. Hey Presto! The auto complete will populate the drop down with the top 10 matching Pokemon to the letters he can remember.
+He can then select the one he wants and press go to release the Pokémon on the grass to get some nice fresh air!
 
 ## What
-We're creating a Pokemon auto complete search bar to help Ash.
+We're creating a Pokemon auto complete search bar to help Ash find the pokemon he wants.
 
 ## How
 The main tasks we had to do were:
@@ -26,7 +27,7 @@ We did this by blah blah blah .....
 - [ ] Add Poké theme tune and color scheme because we want to be the very best.
 
 ## How did we split up work?
-
+![alt text](media/architecture_sketch.JPG)
 ## How did you pair?
 
 ## What did you learn?
