@@ -23,7 +23,7 @@ const index = function(request, response) {
       return;
     }
     response.end(file);
-  } 
+  }
 );
 };
 
@@ -33,7 +33,8 @@ const assets = function(request, response, filePath) {
     html: 'text/html',
     js: 'application/javascript',
     png: 'image/png',
-    ico: 'icon/x-image'
+    ico: 'icon/x-image',
+    mp3: 'audio/mpeg'
   };
 
   const assetUrl = request.url;
