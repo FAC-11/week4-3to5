@@ -34,19 +34,22 @@ button{
 
 .img{
   display: flex;
-  flex-wrap: nowrap;
   box-sizing: border-box;
   background-repeat: no-repeat;
 }
 
 .ash{
 float: left;
-flex-wrap: nowrap;
 transform: scale(1.25, 1.25);
 z-index: -1;
 margin-top: 120px;
 margin-left: 25px;
-width: 25%;
+}
+
+.ashAndDex{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 75px;
 }
 
 .ho-oh{
@@ -56,12 +59,9 @@ width: 25%;
   animation: bob 10s infinite linear, fly 10s infinite linear, bigger 10s infinite linear;
 }
 .pokeImage{
-  flex-wrap: nowrap;
   height:400px;
   margin-left: 206px;
 margin-top: 200px;
-width:30%;
-height: 30%;
 }
 
 @keyframes bob {
