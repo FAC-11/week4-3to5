@@ -20,15 +20,14 @@ The main tasks we had to do were:
 - [x] Auto-complete the input field
 - [ ] Testing front-end __and__ back-end
 
-We did this by blah blah blah .....
-
 ## Stretch Goals
 - [ ] To get all stats for a Pokemon from the Poké API.
-- [ ] Add Poké theme tune and color scheme because we want to be the very best.
+- [x] Add Poké theme tune and color scheme because we want to be the very best.
 
 ## How did we split up work?
 ![alt text](media/architecture_sketch.JPG)
-## How did you pair?
+* We tried pairing where someone was confident on the topic they were working on. 
+* We then rotated pairs every half a day
 
 ## What did you learn?
 * The 'call' method on functions allows you to use array methods on NodeLists
