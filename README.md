@@ -6,7 +6,7 @@ Ash __loves__ Pokemon. And we mean LOVES. After 20 years he has finally caught '
 Currently he has to look in his Pokédex which is totally unreliable. He feels like he's living in the '90s, still using his Pokedex. He wishes he could just search using his smartphone for any Pokemon name and find the crucial stats he needs to become a true Pokemon master.
 
 ### User Journey
-Ash would simply go to (insert URL) and type the starting letter of the Pokemon he wants information on. Hey Presto! The auto complete will populate the drop down with the top 10 matching Pokemon to the letters he can remember.
+Ash would simply go to [this awesome website](https://pokeautocomplete.herokuapp.com/) and type the starting letter of the Pokemon he wants information on. Hey Presto! The auto complete will populate the drop down with the top 10 matching Pokemon to the letters he can remember.
 He can then select the one he wants and press go to release the Pokémon on the grass to get some nice fresh air!
 
 ## What
