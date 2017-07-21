@@ -40,6 +40,7 @@ button{
 }
 
 .ash{
+  flex: 1;
 float: left;
 flex-wrap: nowrap;
 transform: scale(1.25, 1.25);
@@ -57,11 +58,13 @@ width: 25%;
 }
 .pokeImage{
   flex-wrap: nowrap;
+  flex: 3;
   height:400px;
   margin-left: 206px;
 margin-top: 200px;
 width:30%;
 height: 30%;
+z-index: 5;
 }
 
 @keyframes bob {
